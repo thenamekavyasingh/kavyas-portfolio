@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kavya's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="header-animation">Welcome to My Portfolio</h1>
+            <p class="lead">Hi, I'm Kavya, a budding software engineer with a passion for web development!</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2><strong>About Me</strong></h2>
+            <p>Hello! I'm a 3rd year CSE undergrad at NIT Patna and I'm enthusiastic about learning and building projects in web development and problem solving. I’m constantly improving my skills and am excited to share some of my work with you!</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container text-center">
+            <h2><strong>Skills</strong></h2>
+            <div class="row">
+                <div class="col-md-4"><h4>HTML</h4></div>
+                <div class="col-md-4"><h4>CSS</h4></div>
+                <div class="col-md-4"><h4>JavaScript</h4></div>
+                <div class="col-md-4"><h4>Bootstrap</h4></div>
+                <div class="col-md-4"><h4>C++</h4></div>
+                <div class="col-md-4"><h4>DSA</h4></div>
+                
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container text-center">
+            <h2><strong>Projects</strong></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Management Tool</h5>
+                            <p class="card-text">A tool for teams to create, assign, and track tasks. Features project boards and drag-and-drop assignments.</p>
+                            <!-- GitHub Link -->
+                            <a href="https://github.com/yourusername/task-management-tool" target="_blank" class="btn btn-dark">
+                                <i class="bi bi-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A personal portfolio website showcasing my skills and projects. Features include a responsive design, project galleries, and contact form.</p>
+                            <!-- GitHub Link -->
+                            <a href="https://github.com/yourusername/task-management-tool" target="_blank" class="btn btn-dark">
+                                <i class="bi bi-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Repeat for more projects -->
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container text-center">
+            <h2><strong>Contact Me</strong></h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <p id="contactMessage" class="mt-3"></p>
+        </div>
+    </section>
+    
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Kavya's Portfolio</p>
+        <div class="social-links">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/kavya-singh-427789259/" target="_blank" class="text-white me-3">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/" target="_blank" class="text-white me-3">
+                <i class="bi bi-github"></i>
+            </a>
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/thenamekavyasingh/" target="_blank" class="text-white">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

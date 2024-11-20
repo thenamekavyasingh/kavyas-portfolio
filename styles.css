@@ -1,0 +1,106 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    height: 300px;
+}
+
+header {
+    background: var(--header-bg) no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+}
+
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.header-animation {
+    animation: pop-out 1s ease forwards;
+}
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.8;
+    text-align: center; /* Centers the paragraph */
+    font-size: 1.1rem;
+    color: #555; /* Softer text color for readability */
+}
+
+
+#skills .col-md-4 h4 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+#projects .card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+header h1 {
+    font-family: 'Ubuntu',Dalton Mag; /* Change to your chosen font */
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: 700; /* Adjust the font weight as needed */
+}
+
+#projects .card {
+    margin-bottom: 20px;
+}
+
+
+#contactForm input, #contactForm textarea {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    margin-top: 50px;
+}
+
+#contactMessage {
+    color: rgb(6 55 126);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
